@@ -3,6 +3,73 @@
 When performing a code review, follow this structured checklist before relying on the rest of this guide. Do the review in French.
 Prefer JavaScript over TypeScript.
 
+### Final Review Status & Color Coding
+
+After completing the code review, provide a final summary comment with a color-coded status to indicate if the PR is ready to merge:
+
+#### 🟢 GREEN - Ready to Merge
+- No security vulnerabilities identified
+- No business logic concerns
+- Minor style/formatting issues only (if any)
+- All architectural patterns followed correctly
+- Tests present and adequate
+- Documentation updated as needed
+
+#### 🟡 YELLOW - Needs Review or Minor Work
+- Minor security considerations that need attention
+- Some business logic needs clarification or improvement
+- Missing tests for new functionality
+- Documentation gaps
+- Performance considerations that should be addressed
+- Non-critical architectural deviations
+- **Action Required**: Address feedback before merging or get human review
+
+#### 🔴 RED - Unsafe to Merge
+- **CRITICAL**: Security vulnerabilities present
+- **CRITICAL**: Business logic flaws or data integrity risks
+- Major architectural violations
+- Missing essential validations or permission checks
+- Potential for data loss or system instability
+- **Action Required**: DO NOT MERGE - requires immediate attention and technical lead review
+
+### Escalation & Notifications
+
+When assigning YELLOW or RED status, include appropriate notifications:
+
+#### For YELLOW Status:
+- Mention the PR author: `@author-username`
+- Add relevant team members if specific expertise needed
+- Include clear action items to resolve issues
+
+#### For RED Status:
+- **CRITICAL**: Mention everyone on the team: `@team`
+- **CRITICAL**: Mention technical lead if known: `@tech-lead-username`
+- If technical lead is unknown, add: `⚠️ **TECHNICAL LEAD REVIEW REQUIRED** - This PR contains critical issues that require immediate technical leadership review before any merge consideration.`
+- List all critical issues that must be resolved
+- Include security implications and potential impact
+
+### Review Comment Template
+
+End each review with this format:
+
+```
+## 📋 Review Summary
+
+**Status**: [🟢 GREEN / 🟡 YELLOW / 🔴 RED] - [Brief status description]
+
+### Key Findings:
+- [List main points]
+- [Security concerns if any]
+- [Business logic issues if any]
+
+### Action Items:
+- [Specific tasks to complete]
+- [Required reviews or approvals]
+
+### Notifications:
+[Include @mentions as per escalation rules above]
+```
+
 ### High-Level Architecture
 - Does the change fit the existing module boundaries (UI in `client/` & `imports/ui/`, backend logic & publications/methods in `imports/api/`)?
 - Are new concerns introduced in the right layer (avoid putting business rules inside React components or Blaze templates)?
