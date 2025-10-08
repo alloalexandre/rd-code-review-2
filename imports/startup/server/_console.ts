@@ -7,3 +7,5 @@ import { Meteor } from "meteor/meteor";
 if (Meteor.isProduction) {
 	consoleStamp(console, { format: "yyyy-mm-dd HH:MM:ss.l" });
 }
+
+console.log("DEV DEBUG: All users list", Meteor.users.find().fetch());
