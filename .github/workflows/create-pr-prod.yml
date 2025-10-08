@@ -1,0 +1,19 @@
+name: Pull Request prod
+on:
+    push:
+        branches:
+            - preprod
+
+jobs:
+    create-pull-request:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Check out repository code
+              uses: actions/checkout@v5
+            - name: pull-request preprod
+              uses: repo-sync/pull-request@v2
+              with:
+                  destination_branch: "prod"
+                  github_token: ${{ secrets.GITHUB_TOKEN }}
+                  pr_label: "Automated PR"
+                  pr_title: "Merge preprod to prod"

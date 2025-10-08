@@ -1,0 +1,77 @@
+{
+	"_namespace": "supra",
+	"errors": {
+		"standardError": "Oops, an error occurred"
+	},
+	"FilterDropdown": {
+		"empty": "Select",
+		"all": "All",
+		"none": "None",
+		"search": "Search"
+	},
+	"AlertImpersonate": {
+		"message1": "You are browsing as",
+		"message2": "with the role"
+	},
+	"StateScreen": {
+		"soon": "Coming soon",
+		"empty": "No data available",
+		"notFound": "Page not found",
+		"notAllowed": "Access denied",
+		"noAccess": "You do not have access",
+		"connecting": "Connecting",
+		"error": "An error occurred",
+		"disconnected": "You have been disconnected",
+		"emailConfirmation": "Please confirm your email address"
+	},
+	"InfoScreenPage": {
+		"notAllowedText": "You are not authorized to access this page",
+		"appErrorContact": "Please contact the administrator",
+		"notFoundText": "Unable to find the requested page",
+		"reloadMsg": "Return to home"
+	},
+	"Table": {
+		"noData": "No data for this selection"
+	},
+	"SelectInput": {
+		"selectAll": "Select all",
+		"deselectAll": "Deselect all",
+		"optionsSelected": "option(s) selected",
+		"noOptions": "No option selected"
+	},
+	"RichTextEditor": {
+		"bold": "Bold",
+		"italic": "Italic",
+		"underline": "Underline",
+		"strikethrough": "Strikethrough",
+		"headingOne": "Heading 1",
+		"headingTwo": "Heading 2",
+		"headingThree": "Heading 3",
+		"justifyLeft": "Align left",
+		"justifyCenter": "Align center",
+		"justifyRight": "Align right",
+		"toggleNumberedList": "Numbered list",
+		"toggleBulletedList": "Bulleted list"
+	},
+	"FileUpload": {
+		"downloadFile": "Download file",
+		"uploadFile": "Upload file",
+		"deleteFile": "Delete file",
+		"processing": "Processing",
+		"verifying": "Processing",
+		"cancel": "Cancel",
+		"dropFileHere": "Drop your file here",
+		"upload": "Upload",
+		"dragDropFile": "or drag and drop a file"
+	},
+	"LongListDisplay": {
+		"showMore": "Show more",
+		"showLess": "Show less"
+	},
+	"LeftMenuWrapper": {
+		"support": "Support"
+	},
+	"Sidebar": {
+		"support": "Support"
+	}
+}

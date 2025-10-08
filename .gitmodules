@@ -1,0 +1,7 @@
+[submodule "packages/meteor-stale-session"]
+	path = packages/meteor-stale-session
+	url = git@github.com:allohouston/meteor-stale-session.git
+[submodule "packages/suprakit-ui"]
+	path = packages/suprakit-ui
+	url = git@github.com:allohouston/suprakit-ui.git
+	branch = dev

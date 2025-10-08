@@ -1,0 +1,4 @@
+{
+	"foldersToRemove": ["./imports/api/example", "./imports/api/fileExample"],
+	"filesToRemove": ["./imports/stores/example.store.js"]
+}

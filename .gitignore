@@ -1,0 +1,25 @@
+# System files
+.DS_Store
+npm-debug.log
+
+# IDE
+.idea
+.vscode/
+!.vscode/settings.json
+settings.json
+
+# Node
+node_modules/
+
+# Meteor
+.meteor/test/
+
+# Lint / config
+.eslint-meteor-files
+jsconfig.json
+
+# TypeScript
+tsconfig.tsbuildinfo
+
+# Auto-generated
+SETTINGS.md

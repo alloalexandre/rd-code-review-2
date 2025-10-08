@@ -1,0 +1,16 @@
+@import (reference) "/client/main.less";
+
+.UserManagementTable {
+    // define a map of icons to colors
+    @icons: {
+        o-clock: var(--color-orange-400);
+        o-close: var(--color-red-500);
+        o-check-circle: var(--color-green-500);
+    };
+
+    each(@icons, {
+        .icon-@{key} {
+            color: @value !important;
+        }
+    });
+}

@@ -1,0 +1,56 @@
+{
+	"public": {
+		"appName": "SupraKit Meteor Start",
+		"helpscoutBeaconId": "3a5ac906-f2a4-4a79-b3b3-fc55d5090f3f",
+		"absoluteLogPath": "",
+		"staleSessionInactivityTimeout": 3600000,
+		"staleSessionForceLogout": true,
+		"logPrefix": "suprakit-meteor-start-",
+		"debug": true,
+		"production": false
+	},
+	"monti": {
+		"appId": "",
+		"appSecret": "",
+		"options": {
+			"eventStackTrace": true
+		}
+	},
+	"private": {
+		"superAdminPassword": "Allohouston",
+		"slackWebHookUrl": "",
+		"mails": {
+			"enabled": true,
+			"sendEmailsFrom": "contact@allohouston.fr",
+			"sendEmailsTo": "example1@allohouston.fr,example2@allohouston.fr"
+		},
+		"s3": {
+			"bucket": "",
+			"access_key": "",
+			"access_secret": "",
+			"region": "sbg",
+			"endpoint": ""
+		},
+		"jobs": {
+			"example": { "enabled": true }
+		},
+		"fakeUsers": [
+			{
+				"email": "fake.superadmin@example.com",
+				"firstName": "Fake",
+				"lastName": "SuperAdmin",
+				"password": "ChangeMe123!",
+				"roles": [{ "id": "superAdmin" }],
+				"verified": true
+			},
+			{
+				"email": "fake.admin@example.com",
+				"firstName": "Fake",
+				"lastName": "Admin",
+				"roles": [{ "id": "admin" }],
+				"verified": true,
+				"sendEnrollment": false
+			}
+		]
+	}
+}

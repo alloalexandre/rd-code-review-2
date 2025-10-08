@@ -1,0 +1,56 @@
+{
+	"compilerOptions": {
+		"target": "es2018",
+		"module": "esnext",
+		"lib": ["esnext", "dom"],
+		"allowJs": true,
+		"checkJs": true,
+		"jsx": "react-jsx",
+		"incremental": true,
+		"noEmit": true,
+
+		"strict": true,
+		"noImplicitAny": true,
+		"strictNullChecks": true,
+
+		"noUnusedLocals": false,
+		"noUnusedParameters": true,
+		"noImplicitReturns": false,
+		"noFallthroughCasesInSwitch": false,
+
+		"baseUrl": ".",
+		"paths": {
+			"/*": ["*"],
+			"meteor/*": [
+				"node_modules/@types/meteor/*",
+				".meteor/local/types/packages.d.ts"
+			],
+			"meteor/allohouston:*": [
+				"packages/*/index-client.ts",
+				"packages/*/index-server.js"
+			]
+		},
+
+		"esModuleInterop": true,
+		"moduleResolution": "node",
+		"resolveJsonModule": true,
+
+		"types": ["node", "react"],
+		"typeRoots": ["./types", "./node_modules/@types"],
+
+		"preserveSymlinks": true,
+		"skipLibCheck": true
+	},
+	"include": [
+		"./types/**/*",
+		"./imports/**/*",
+		"./client/**/*",
+		"./server/**/*"
+	],
+	"exclude": [
+		"./node_modules/**/*",
+		"./public/**/*",
+		".meteor/**/*",
+		"./packages/**/*"
+	]
+}

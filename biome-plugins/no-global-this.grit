@@ -1,0 +1,3 @@
+`globalThis` as $global_this where {
+	register_diagnostic(span=$global_this, message="Direct usage of globalThis is forbidden. Breaks module encapsulation and creates untraceable dependencies. Use ES6 imports instead.", severity="error")
+}

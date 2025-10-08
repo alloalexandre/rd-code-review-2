@@ -1,0 +1,98 @@
+{
+	"$schema": "https://biomejs.dev/schemas/2.2.4/schema.json",
+	"plugins": [
+		"./biome-plugins/no-meteor-settings.grit",
+		"./biome-plugins/no-global-this.grit",
+		"./biome-plugins/no-create-context.grit"
+	],
+	"vcs": {
+		"enabled": false,
+		"clientKind": "git",
+		"useIgnoreFile": false
+	},
+	"files": {
+		"ignoreUnknown": false,
+		"includes": [
+			"**/*",
+			"!**/node_modules/**/*",
+			"!packages/**/*",
+			"!**/.*/**/*"
+		]
+	},
+	"formatter": {
+		"enabled": true,
+		"indentStyle": "tab"
+	},
+	"linter": {
+		"enabled": true,
+		"rules": {
+			"recommended": true,
+			"style": {
+				"noDefaultExport": "error",
+				"noCommonJs": "error",
+				"noImplicitBoolean": "error",
+				"noNegationElse": "error",
+				"noNestedTernary": "error",
+				"noParameterAssign": "error",
+				"noUselessElse": "error",
+				"useAsConstAssertion": "error",
+				"useCollapsedElseIf": "error",
+				"useDefaultSwitchClause": "error",
+				"useForOf": "error",
+				"useGroupedAccessorPairs": "error",
+				"useThrowOnlyError": "error",
+				"useThrowNewError": "error",
+				"noMagicNumbers": "error"
+			},
+			"complexity": {
+				"noExcessiveCognitiveComplexity": "error",
+				"noForEach": "error",
+				"useSimplifiedLogicExpression": "error"
+			},
+			"correctness": {
+				"noReactPropAssignments": "error",
+				"noUndeclaredVariables": "error",
+				"useHookAtTopLevel": "error",
+				"useJsxKeyInIterable": "error"
+			},
+			"performance": {
+				"noAwaitInLoops": "error",
+				"useTopLevelRegex": "error"
+			},
+			"suspicious": {
+				"noEmptyBlockStatements": "error",
+				"noUnassignedVariables": "error",
+				"useErrorMessage": "error"
+			},
+			"nursery": {
+				"noFloatingPromises": "error",
+				"noImportCycles": "error",
+				"noMisusedPromises": "error",
+				"noNonNullAssertedOptionalChain": "error",
+				"noShadow": "error",
+				"noUnnecessaryConditions": "error",
+				"noUselessCatchBinding": "error",
+				"noUselessUndefined": "error",
+				"useConsistentArrowReturn": "error",
+				"useExhaustiveSwitchCases": "error",
+				"useExplicitType": "error",
+				"useReactFunctionComponents": "error",
+				"useSortedClasses": "error"
+			}
+		}
+	},
+	"javascript": {
+		"jsxRuntime": "reactClassic",
+		"formatter": {
+			"quoteStyle": "double"
+		}
+	},
+	"assist": {
+		"enabled": true,
+		"actions": {
+			"source": {
+				"organizeImports": "on"
+			}
+		}
+	}
+}

@@ -1,0 +1,77 @@
+{
+	"_namespace": "supra",
+	"errors": {
+		"standardError": "Oups, une erreur est survenue"
+	},
+	"FilterDropdown": {
+		"empty": "Sélectionner",
+		"all": "Tous",
+		"none": "Aucun",
+		"search": "Rechercher"
+	},
+	"AlertImpersonate": {
+		"message1": "Vous naviguez en tant que",
+		"message2": "avec le rôle"
+	},
+	"StateScreen": {
+		"soon": "Bientôt disponible",
+		"empty": "Aucune donnée disponible",
+		"notFound": "Page introuvable",
+		"notAllowed": "Accès refusé",
+		"noAccess": "Vous n'avez pas accès",
+		"connecting": "Connexion en cours",
+		"error": "Une erreur est survenue",
+		"disconnected": "Vous avez été déconnecté",
+		"emailConfirmation": "Veuillez confirmer votre adresse e-mail"
+	},
+	"InfoScreenPage": {
+		"notAllowedText": "Vous n'êtes pas autorisé à accéder à cette page",
+		"appErrorContact": "Merci de contacter l'administrateur",
+		"notFoundText": "Impossible de trouver la page demandée",
+		"reloadMsg": "Revenir à l'accueil"
+	},
+	"Table": {
+		"noData": "Aucune donnée pour cette sélection"
+	},
+	"SelectInput": {
+		"selectAll": "Tout sélectionner",
+		"deselectAll": "Tout désélectionner",
+		"optionsSelected": "option(s) sélectionnée(s)",
+		"noOptions": "Pas d'option sélectionné"
+	},
+	"RichTextEditor": {
+		"bold": "Gras",
+		"italic": "Italique",
+		"underline": "Souligner",
+		"strikethrough": "Barré",
+		"headingOne": "Titre 1",
+		"headingTwo": "Titre 2",
+		"headingThree": "Titre 3",
+		"justifyLeft": "Aligner à gauche",
+		"justifyCenter": "Centrer",
+		"justifyRight": "Aligner à droite",
+		"toggleNumberedList": "Liste numérotée",
+		"toggleBulletedList": "Liste à puces"
+	},
+	"FileUpload": {
+		"downloadFile": "Télécharger le fichier",
+		"uploadFile": "Charger un fichier",
+		"deleteFile": "Supprimer le fichier",
+		"processing": "Traitement en cours",
+		"verifying": "Traitement",
+		"cancel": "Annuler",
+		"dropFileHere": "Déposez votre fichier ici",
+		"upload": "Téléverser",
+		"dragDropFile": "ou glisser/déposer un fichier"
+	},
+	"LongListDisplay": {
+		"showMore": "Afficher plus",
+		"showLess": "Afficher moins"
+	},
+	"LeftMenuWrapper": {
+		"support": "Support"
+	},
+	"Sidebar": {
+		"support": "Support"
+	}
+}

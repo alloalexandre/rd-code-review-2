@@ -1,0 +1,89 @@
+@import (reference) "/client/main.less";
+
+.LoginPage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: var(--size-spacing-10) var(--size-spacing-12);
+    gap: var(--size-spacing-6);
+    border-radius: 0.5rem;
+    background: var(--color-neutral-50);
+    .shadowDownL;
+
+    .logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100px;
+        padding-bottom: 2rem;
+
+        img {
+            height: 100%;
+        }
+    }
+
+    .formArea {
+        display: flex;
+        flex-direction: column;
+        gap: var(--size-spacing-4);
+        width: 100%;
+        position: relative;
+
+        h1 {
+            color: var(--color-primary-400);
+            .h3Semi;
+        }
+
+        h2 {
+            color: var(--color-neutral-600);
+            .p2Regular;
+        }
+
+        .TextInput {
+            input {
+                width: 100%;
+                height: 44px;
+            }
+        }
+
+        .errorMessage {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            font-size: 0.75rem;
+            color: var(--color-red-500);
+        }
+
+        .switchArea {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 0.5rem;
+
+            .switchStateButton {
+                font-size: 0.8em;
+            }
+        }
+
+        .submitArea {
+            display: flex;
+            justify-content: center;
+            margin-top: 1rem;
+
+            .Button {
+                width: 100%;
+                height: 44px;
+                justify-content: center;
+            }
+        }
+
+        .emailSent {
+            margin-top: 1rem;
+            text-align: center;
+            font-size: 0.8em;
+            color: green;
+        }
+    }
+}

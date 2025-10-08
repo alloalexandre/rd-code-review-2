@@ -1,0 +1,70 @@
+{
+	"loading": "Chargement en cours...",
+	"UserManagementPage": {
+		"addUser": "Ajouter",
+		"modifyUser": "Modifier",
+		"addUserDuplicateEmailError": "Un utilisateur avec cet email existe déjà",
+		"form": {
+			"createTitle": "Nouvel utilisateur",
+			"email": "Email",
+			"firstName": "Prénom",
+			"lastName": "Nom",
+			"role": "Droit d'accès",
+			"updateTitle": "Modification de l'utilisateur"
+		},
+		"loading": "Chargement des données",
+		"table": {
+			"header": {
+				"edit": "Modifier",
+				"email": "email",
+				"firstName": "Prénom",
+				"lastName": "Nom",
+				"name": "Utilisateur",
+				"role": "Droit d'accès",
+				"status": "Statut"
+			},
+			"noData": "Aucune donnée pour cette sélection"
+		},
+		"buttons": {
+			"impersonate": "Utiliser ce compte",
+			"resendInvitation": "Renvoyer l'email d'invitation",
+			"invitationSent": "Email envoyé"
+		},
+		"title": "Gestion utilisateurs"
+	},
+	"UserInfoPage": {
+		"title": "Mon profil"
+	},
+	"LoginPage": {
+		"createAccountTitle": "Créer un compte",
+		"emailPlaceholder": "Email",
+		"emailValidationError": "Email invalide",
+		"errorMessage": "Email ou mot de passe incorrect",
+		"forgotPasswordButton": "Mot de passe oublié ?",
+		"loginButton": "Connexion",
+		"loggingInMessage": "Connexion en cours",
+		"passwordPlaceholder": "Mot de passe",
+		"resetPassword": "Modifier le mot de passe",
+		"firstName": "Prénom",
+		"lastName": "Nom",
+		"modalConfirmationTitle": "Modification du mot de passe",
+		"modalConfirmationMessage": "Nous vous avons envoyé un email pour modifier le mot de passe",
+		"passwordReset": {
+			"emailButton": "Envoyer l'email de réinitialisation",
+			"emailSent": "Un email de réinitialisation vous été envoyé",
+			"incorrectEmail": "Votre identifiant est incorrect",
+			"lowerCaseRequired": "Votre mot de passe doit au moins contenir une minuscule",
+			"newPassword": "Nouveau mot de passe",
+			"passwordMinChar": "Votre mot de passe doit au moins contenir {$minChar} caractères",
+			"passwordRules": "Votre mot de passe doit contenir minimum {$minChar} caractères, une majuscule et une minuscule",
+			"passwordsMustMatch": "Les mots de passe ne correspondent pas",
+			"repeatPassword": "Confirmer le nouveau mot de passe",
+			"resetPasswordButton": "Mettre à jour le mot de passe",
+			"returnToLogin": "Retour à la page de connexion",
+			"title": "Réinitialiser votre mot de passe",
+			"upperCaseRequired": "Votre mot de passe doit au moins contenir une majuscule"
+		},
+		"title": "Connection",
+		"subTitle": "Sous-titre"
+	}
+}

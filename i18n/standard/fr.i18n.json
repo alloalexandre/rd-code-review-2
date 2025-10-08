@@ -1,0 +1,11 @@
+{
+	"_namespace": "standard",
+	"error": "Oups, une erreur est survenue",
+	"requiredField": "Ce champ est obligatoire",
+	"success": "Enregistré",
+	"sent": "Email envoyé",
+	"save": "Enregistrer",
+	"close": "Fermer",
+	"cancel": "Annuler",
+	"emailValidationError": "Email invalide"
+}

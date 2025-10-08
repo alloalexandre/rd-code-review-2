@@ -1,0 +1,44 @@
+name: CodeQL
+
+on:
+    pull_request:
+    schedule:
+        - cron: '0 3 * * 1' # Every Monday at 03:00 UTC
+    workflow_dispatch:
+
+permissions:
+    actions: read
+    contents: read
+    security-events: write
+
+jobs:
+    analyze:
+        name: Analyze (CodeQL)
+        runs-on: ubuntu-latest
+        timeout-minutes: 45
+        strategy:
+            fail-fast: false
+            matrix:
+                language: [ 'javascript' ] # JS + TS covered
+
+        steps:
+            - name: Checkout repository
+              uses: actions/checkout@v5
+              with:
+                  fetch-depth: 2
+
+            - name: Initialize CodeQL
+              uses: github/codeql-action/init@v3
+              with:
+                  languages: ${{ matrix.language }}
+                  # If you later add query packs or custom queries, list them here:
+                  queries: security-and-quality
+
+            # For JavaScript/TypeScript projects no build is usually required. Keep step for future build hooks.
+            - name: Autobuild
+              uses: github/codeql-action/autobuild@v3
+
+            - name: Perform CodeQL Analysis
+              uses: github/codeql-action/analyze@v3
+              with:
+                  category: '/language:${{ matrix.language }}'

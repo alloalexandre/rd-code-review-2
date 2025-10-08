@@ -1,0 +1,70 @@
+{
+	"loading": "Loading...",
+	"UserManagementPage": {
+		"addUser": "Add",
+		"modifyUser": "Modify",
+		"addUserDuplicateEmailError": "A user with this email already exists",
+		"form": {
+			"createTitle": "New user",
+			"email": "Email",
+			"firstName": "First name",
+			"lastName": "Last name",
+			"role": "Role",
+			"updateTitle": "Edit user"
+		},
+		"loading": "Loading data",
+		"table": {
+			"header": {
+				"edit": "Edit",
+				"email": "Email",
+				"firstName": "First name",
+				"lastName": "Last name",
+				"name": "User",
+				"role": "Role",
+				"status": "Status"
+			},
+			"noData": "No data for this selection"
+		},
+		"buttons": {
+			"impersonate": "Use this account",
+			"resendInvitation": "Resend invitation email",
+			"invitationSent": "Email sent"
+		},
+		"title": "User management"
+	},
+	"UserInfoPage": {
+		"title": "My profile"
+	},
+	"LoginPage": {
+		"createAccountTitle": "Create an account",
+		"emailPlaceholder": "Email",
+		"emailValidationError": "Invalid email",
+		"errorMessage": "Incorrect email or password",
+		"forgotPasswordButton": "Forgot password?",
+		"loginButton": "Login",
+		"loggingInMessage": "Logging in",
+		"passwordPlaceholder": "Password",
+		"resetPassword": "Change password",
+		"firstName": "First name",
+		"lastName": "Last name",
+		"modalConfirmationTitle": "Password change",
+		"modalConfirmationMessage": "We have sent you an email to change your password",
+		"passwordReset": {
+			"emailButton": "Send reset email",
+			"emailSent": "A reset email has been sent to you",
+			"incorrectEmail": "Your login is incorrect",
+			"lowerCaseRequired": "Your password must contain at least one lowercase letter",
+			"newPassword": "New password",
+			"passwordMinChar": "Your password must contain at least {$minChar} characters",
+			"passwordRules": "Your password must contain at least {$minChar} characters, one uppercase letter, and one lowercase letter",
+			"passwordsMustMatch": "Passwords do not match",
+			"repeatPassword": "Confirm your new password",
+			"resetPasswordButton": "Update password",
+			"returnToLogin": "Return to login page",
+			"title": "Reset your password",
+			"upperCaseRequired": "Your password must contain at least one uppercase letter"
+		},
+		"title": "Login",
+		"subTitle": "Subtitle"
+	}
+}

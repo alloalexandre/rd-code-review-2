@@ -1,0 +1,41 @@
+name: Pull Request dev
+
+on:
+    push:
+        branches:
+            - "*-dev*"
+
+jobs:
+    create-pull-request:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Check out repository code
+              uses: actions/checkout@v5
+
+            - name: Determine Destination Branch
+              id: dest-branch
+              run: |
+                  BRANCH_NAME="${GITHUB_REF##*/}"
+                  if [[ $BRANCH_NAME == *"-dev" ]]; then
+                    echo "DEST_BRANCH=dev" >> $GITHUB_ENV
+                  elif [[ $BRANCH_NAME == *"-dev-v1"* ]]; then
+                    echo "DEST_BRANCH=dev" >> $GITHUB_ENV
+                  elif [[ $BRANCH_NAME == *"-dev-v2"* ]]; then
+                    echo "DEST_BRANCH=dev-v2" >> $GITHUB_ENV
+                  elif [[ $BRANCH_NAME == *"-dev-v3"* ]]; then
+                    echo "DEST_BRANCH=dev-v3" >> $GITHUB_ENV
+                  elif [[ $BRANCH_NAME == *"-dev-v4"* ]]; then
+                    echo "DEST_BRANCH=dev-v4" >> $GITHUB_ENV
+                  else
+                    echo "No matching pattern for branch $BRANCH_NAME"
+                    exit 1
+                  fi
+
+            - name: Create Pull Request
+              if: env.DEST_BRANCH != ''
+              uses: repo-sync/pull-request@v2
+              with:
+                  destination_branch: ${{ env.DEST_BRANCH }}
+                  github_token: ${{ secrets.GITHUB_TOKEN }}
+                  pr_label: "Automated PR"
+                  pr_title: "Merge ${{ github.ref }} to ${{ env.DEST_BRANCH }}"
