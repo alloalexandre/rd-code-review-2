@@ -1,5 +1,5 @@
-import { Mongo } from "meteor/mongo";
 import { createMethod } from "meteor/jam:method";
+import { Mongo } from "meteor/mongo";
 import { Invoices } from "..";
 
 createMethod({
@@ -9,3 +9,5 @@ createMethod({
 		return Invoices.insert({ amount, customerId, createdAt: new Date() });
 	},
 });
+
+export * from "./methods";
