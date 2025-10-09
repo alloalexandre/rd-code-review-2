@@ -52,7 +52,7 @@ When assigning YELLOW or RED status, include appropriate notifications:
 
 End each review with this format:
 
-```
+```md
 ## 📋 Review Summary
 
 **Status**: [🟢 GREEN / 🟡 YELLOW / 🔴 RED] - [Brief status description]
