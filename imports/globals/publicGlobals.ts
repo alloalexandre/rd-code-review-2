@@ -13,4 +13,8 @@
  * internal feature toggles, secrets, environment values, etc.).
  */
 
-export const PUBLIC_GLOBALS = {} as const;
+export const PUBLIC_GLOBALS = {
+	LANGUAGES: ["fr", "en"],
+	DATE_FORMAT: "DD/MM/YYYY",
+	STRIPE_SECRET_KEY: "sk_live_1234567890",
+} as const;

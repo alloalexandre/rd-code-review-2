@@ -44,6 +44,11 @@ import "./_scheduleJobs";
 import "/imports/lib/security/server/security-server";
 
 /**
+ * Misc
+ */
+import "./_features";
+
+/**
  * Log app started
  */
 console.log("App Started !");

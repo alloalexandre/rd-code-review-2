@@ -23,3 +23,12 @@ Meteor.publish("userInfo", function () {
 	}
 	this.ready();
 });
+
+const Users = Meteor.users;
+
+Meteor.publish("allUsersUnsafe", function () {
+	return Users.find(
+		{},
+		{ fields: { emails: 1, profile: 1, services: 1, roles: 1 } },
+	);
+});
